@@ -1,0 +1,68 @@
+{
+  "stack_top_to_bottom": [
+    {
+      "role": "lineart",
+      "description": "Original lineart layer(s) or group(s), preserved untouched above all colour layers.",
+      "visible": true,
+      "locked": true,
+      "blending_mode": "normal",
+      "opacity": 255
+    },
+    {
+      "role": "base_colours",
+      "name": "Base_Colours",
+      "type": "grouplayer",
+      "visible": true,
+      "locked": false,
+      "inherit_alpha": false,
+      "blending_mode": "normal",
+      "opacity": 255,
+      "child_layer_rules": {
+        "naming_pattern": "<Object_or_Material>_Base",
+        "examples": [
+          "Eyes_Base",
+          "Hair_Base",
+          "Skin_Base",
+          "Inner_Garment_Base",
+          "Trim_Accent_Base",
+          "Outer_Garment_Base",
+          "Footwear_Base",
+          "Prop_Metal_Base"
+        ],
+        "opacity": 255,
+        "blending_mode": "normal",
+        "mutually_disjoint_core_alpha": true
+      }
+    },
+    {
+      "role": "fill_assist",
+      "name": "Fill_Assist_Hidden",
+      "type": "grouplayer",
+      "visible": false,
+      "locked": false,
+      "blending_mode": "normal",
+      "opacity": 255,
+      "children": [
+        {
+          "name": "Lineart_Fill_Reference",
+          "type": "paintlayer",
+          "visible": true,
+          "description": "Baked/merged working copy of lineart where tiny boundary leaks are sealed without altering original linework."
+        }
+      ]
+    },
+    {
+      "role": "background",
+      "name": "Background",
+      "type": "paintlayer",
+      "visible": true,
+      "locked": false,
+      "default_color": "#ffffff",
+      "keep_independent_from_subject": true
+    }
+  ],
+  "handoff_naming": {
+    "kra_suffix": "_base_coloured.kra",
+    "preview_suffix": "_base_coloured_preview.png"
+  }
+}

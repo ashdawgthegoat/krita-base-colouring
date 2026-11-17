@@ -1,0 +1,34 @@
+{
+  "fill": {
+    "reference_layer_group": "Fill_Assist_Hidden",
+    "reference_layer_name": "Lineart_Fill_Reference",
+    "channel": "alpha",
+    "threshold": 1,
+    "tolerance": 3,
+    "high_tolerance_fallback": 48,
+    "seed_empty_alpha_max": 3
+  },
+  "antialiasing": {
+    "default_grow_px": 1,
+    "thick_stroke_grow_px": 2,
+    "thick_stroke_width_threshold_px": 5.0
+  },
+  "boundary_repair": {
+    "seal_color": "#000000",
+    "seal_stroke_width_px": 2.5,
+    "max_auto_gap_width_px": 6,
+    "require_visual_confirmation_above_px": 4
+  },
+  "verification": {
+    "min_unfilled_island_px": 6,
+    "white_luminance_threshold": 245,
+    "overlap_alpha_threshold": 128,
+    "crop_zoom_factor": 2
+  },
+  "krita_mcp_limits": {
+    "max_edits_per_batch": 64,
+    "max_draw_commands": 2000,
+    "max_polygon_points": 2048,
+    "fill_rect_padding_px": 4
+  }
+}

@@ -1,0 +1,38 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv*/
+venv/
+env/
+
+# OS, editor, and temporary files
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+*.swo
+*.bak
+*.log
+.vscode/
+.idea/
+
+# Credentials and local config
+.env
+.env.*
+*.pem
+*.key
+*credentials*
+*secret*
+
+# Krita working documents and auto-backups
+*.kra
+*.kra~
